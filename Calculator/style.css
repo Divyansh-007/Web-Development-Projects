@@ -1,0 +1,44 @@
+:root{
+    --display-color : whitesmoke;
+    --result-color: cornflowerblue;
+    --btn-color: cornsilk;
+    --oper-btn-color: #d6344a;
+}
+
+table{
+    margin: 5% 40%;
+}
+
+.display{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 5rem;
+    width: 100%;
+    background-color: whitesmoke;
+    background-color: var(--display-color);
+}
+
+.display > span{
+    font-size: 5rem;
+    color: cornflowerblue;
+    color: var(--result-color);
+}
+
+.button{
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    background-color: cornsilk;
+    background-color: var(--btn-color);
+    border: none;
+}
+
+.oper_button{
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #d6344a;
+    background-color: var(--oper-btn-color);
+    border: none;
+}
