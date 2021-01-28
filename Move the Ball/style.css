@@ -1,0 +1,51 @@
+body{
+    background: linear-gradient(45deg,rgb(194, 103, 42),rgb(86, 86, 187));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#heading{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+#outer{
+    margin: 2% 15%; 
+    height: 30rem; 
+    width: auto;
+    background-color: rgb(214, 202, 202);
+    border-radius: 53px;
+    position: relative;
+}
+
+#inner{
+    height: 100px; 
+    width: 100px; 
+    background-color: cornflowerblue;
+    position: relative;
+    top: 34.5%;
+    left: 44.5%;
+    border-radius: 50%;
+}
+
+#inner p{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 6rem;
+    font-weight: 600;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    margin-right: 10px;
+}
