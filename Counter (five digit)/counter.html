@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="counter.css">
+    <title>Counter</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Enter a value between 0 to 99999</h2>
+        <div class="input">
+            <input id="target_value" type="number">
+            <button id="starter" onclick="startCounter()">Start Counter</button>
+        </div>
+        <div style="height:10px;"></div>
+    </div>
+
+    <div class="display">
+        <div id="tenThous" class="count" style="background-color: black;">
+            <p class="current"> 0 </p>
+            <p class="next"> 1 </p>
+        </div>
+        <div id="thous" class="count" style="background-color: black;">
+            <p class="current"> 0 </p>
+            <p class="next"> 1 </p>
+        </div>
+        <div id="hund" class="count" style="background-color: black;">
+            <p class="current"> 0 </p>
+            <p class="next"> 1 </p>
+        </div>
+        <div id="ten" class="count" style="background-color: black;">
+            <p class="current"> 0 </p>
+            <p class="next"> 1 </p>
+        </div>
+        <div id="unit" class="count" style="background-color: black;">
+            <p class="current"> 0 </p>
+            <p class="next"> 1 </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="counter.js"></script>
+</body>
+</html>
