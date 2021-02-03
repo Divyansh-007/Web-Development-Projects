@@ -1,0 +1,60 @@
+#heading{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    height: 7rem;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(45deg,#7979c5,#e64040);
+}
+
+form label{
+    margin-left: 4%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+form #dog_breed{
+    margin-left: -8%;
+    font-size: 1.5rem;
+}
+
+form #get_btn{
+    margin-right: 10%;
+    font-size: 1.5rem;
+    padding: 8px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+#display{
+    margin: 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+#display img{
+    margin: 5%;
+    margin-left: 32%;
+    /* background-color: red; */
+    height: 19rem;
+    width: 19rem;
+    background-attachment: fixed;
+}
+
+#display #next_btn{
+    margin-right: 5%;
+    font-size: 1rem;
+    padding: 8px;
+    background-color: white;
+    color: cornflowerblue;
+    border: lightgrey 1px solid;
+}
