@@ -1,0 +1,29 @@
+body{
+    background: linear-gradient(45deg,#6b6262,#bda8a8);
+    background-attachment: fixed;
+}
+
+#heading{
+    text-align: center;
+    color: white;
+}
+
+#img_container{
+    height: 28rem;
+    margin: 5% 10%;
+    width: auto;
+    border: 1px dashed lightgrey;
+    background: linear-gradient(135deg,#dc5e5e,#3d3d6d);
+}
+
+#img_container #img_display{
+    margin: 5% 25%;
+    height: 20rem;
+    width: auto;
+}
+
+#img_container #title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
