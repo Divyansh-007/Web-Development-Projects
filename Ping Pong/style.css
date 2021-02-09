@@ -1,0 +1,58 @@
+#heading{
+    text-align: center;
+}
+
+#container{
+    background-color: burlywood;
+    border: 2px solid black;
+    margin: 2% 10%;
+    height: 32rem;
+    width: auto;
+}
+
+#field{
+    background-color: chartreuse;
+    border: 2px dashed white;
+    position: relative;
+    margin : 5%;
+    height: 25rem;
+    width: auto;
+}
+
+#field #net{
+    position: relative;
+    top: 45%;
+}
+
+#player1, #player2{
+    width: 8rem;
+    height: 1.5rem;
+    position: fixed;
+    left: 47%;
+    text-align: center;
+    line-height: 1.5rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+#player1{
+    background-color: red;
+    top: 146px;
+}
+
+#player2{
+    background-color: blue;
+    top: 514px;
+}
+
+#ball {
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+    position: fixed;
+    top: 175px;
+    left: 51%;
+    border-radius: 50%;
+}
