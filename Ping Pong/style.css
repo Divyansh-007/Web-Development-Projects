@@ -25,9 +25,9 @@
 }
 
 #player1, #player2{
+    position: fixed;
     width: 8rem;
     height: 1.5rem;
-    position: fixed;
     left: 47%;
     text-align: center;
     line-height: 1.5rem;
