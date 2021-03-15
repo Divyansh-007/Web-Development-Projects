@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#heading{
+    color: gray;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.display{ 
+    margin: 2% 30%; 
+    height: auto; 
+    width: auto;
+    display: flex; 
+    flex-direction: column;
+}
+
+.item{
+    margin-top: 3px; 
+    width: 100%; 
+    background-color: cornflowerblue; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.item:hover{
+    background-color: gray;
+}
+
+.item h3{
+    margin-left: 2%;
+    color: white;
+}
+
+.item #phone{
+    margin-right: 2%;
+    color: white;
+}
+
+.item #phone #del_btn{
+    margin-left: 2px;
+}
+
+.item #phone #del_btn a{
+    color: red;
+}
+
+form{
+    text-align: center;
+}
+
+form input{
+    font-size: 1.25rem;
+    border: none;
+    border-bottom: 0.5px solid gray;
+}
+
+form button{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    padding: 8px;
+}

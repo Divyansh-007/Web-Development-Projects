@@ -1,0 +1,134 @@
+/* additional classes */
+
+.text_center{
+    text-align: center;
+}
+    /* category color classes */
+.personal{
+    background-color: blue;
+}
+
+.work{
+    background-color: purple;
+}
+
+.school{
+    background-color: green;
+}
+
+.miscellaneous{
+    background-color: peru;
+}
+
+/* entry form */
+
+.table{
+    margin: 0% 25%; 
+    width: auto;
+}
+    /* task description */
+.descp{
+    font-size: 1.5rem; 
+    width: 40rem; 
+    margin-bottom: 1%; 
+    background: transparent; 
+    border: none; 
+    border-bottom: 0.5px solid lightgrey;
+}
+    /* task category */
+.ctg{
+    font-size: 1.25rem; 
+    width: 12rem; 
+    border: 0.5px solid lightgrey;
+}
+    /* task due date */
+.date{
+    font-size: 1.25rem; 
+    width: 12rem; 
+    border: 0.5px solid lightgrey;
+}
+    /* action buttons */
+.btns{
+    display: flex; 
+    align-items: center;
+    height: auto; 
+    width: 25rem; 
+    margin-top: 2%; 
+    margin-left: 35%;
+}
+        /* add task button */
+.add_btn{
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem; 
+    padding: 1rem; 
+    width: 14rem;
+}
+        /* delete tasks button */
+.del_btn{
+    background-color: red; 
+    border-radius: 5px; 
+    height: 2rem; 
+    width: 12rem; 
+    font-size: 1.5rem; 
+    padding: 1rem; 
+    text-align: center; 
+    margin-left: 2%;
+}
+.del_btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* task list display */
+
+.display{
+    margin: 5% 15%; 
+    height: auto; 
+    width: 55rem;
+}
+    /* task item */
+.task_item{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    border-bottom: 0.5px solid lightgray;
+    /* background-color: beige; for disabled*/
+}
+        /* task info */
+.item_info{
+    display: flex; 
+    align-items: center; 
+    margin: 2%;
+    height: 8rem;  
+    width: 30rem; 
+    /* border: 0.5px solid black; */
+}
+    /* check button */
+.check_mark{
+    font-size: 2.5rem;
+    /* pointer-events: none;  for disabled*/
+}
+.check_mark i {
+    color: greenyellow;
+}
+        /* task description */
+.item_descp{
+    margin-left: 8.5%; 
+    width: auto;
+}
+        /* task category */
+.item_ctg{
+    height: 3rem; 
+    width: 8rem; 
+    margin-right: 2%; 
+    text-align: center;
+}
+.item_ctg p{
+    margin-top: 10%; 
+    font-size: 1.25rem; 
+    font-weight: 600;
+    color: white;
+}

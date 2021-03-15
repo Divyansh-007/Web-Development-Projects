@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title><%= title %></title>
+        <script src="https://kit.fontawesome.com/75cf4e84e0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <!-- Page Heading -->
+        <h1 class="text_center">
+            <span style="margin-right: 1%;"><i class="fas fa-clipboard-list fa-lg"></i></span>ToDo App
+        </h1>
+
+        <!-- Entry Form -->
+        <form action="/createTask" method="POST">
+            <table class="table">
+                <tr>
+                    <td class="text_center" colspan="2">
+                    <h2>Description</h2>
+                    <input class="descp" type="text" placeholder="What do you need to do ?" name="description" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text_center">
+                        <h2>Category</h2>
+                        <select class="ctg" name="category">
+                            <option value="Personal">Personal</option>
+                            <option value="Work">Work</option>
+                            <option value="School">School</option>
+                            <option value="Miscellaneous">Miscellaneous</option>
+                        </select>
+                    </td>
+                    <td class="text_center">
+                        <h2>Due Date</h2>
+                        <input class="date" type="date" name="date" required>
+                    </td>
+                </tr>
+            </table>
+            <!-- Action Buttons -->
+            <div class="btns">
+                <button class="add_btn" type="submit"><i class="fas fa-plus"></i>&nbsp; Add Task</button>
+                <div class="del_btn">
+                    <a href="/delete-tasks"><i class="fas fa-trash-alt"></i>&nbsp; Delete Tasks</a>
+                </div>
+            </div>
+        </form>
+    
+        <!-- Task List Diplay -->
+        <div class="display">
+            <% for(let i of task_list){ %> 
+                <!-- for completed tasks -->
+                <% if(i.status == 'completed'){ %> 
+                    <div class="task_item" style="background-color: beige;">
+                        <div class="item_info">
+                            <a class="check_mark" style="pointer-events: none;" href="/complete-task/?id=<%= i._id %>"><i class="far fa-check-square" style="color: black;"></i></a>
+                            <div class="item_descp">
+                                <p style="font-size: 1.5rem;"><%= i.description %></p>
+                                <p style="font-size: 1.25rem;">
+                                    <span><i class="far fa-calendar-alt"></i></span>
+                                    <%= month_list[parseInt(i.date.substring(6,7)) - 1] + " " + i.date.substring(8,10) + " , " + i.date.substring(0,4) %> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item_ctg <%= i.category %>">
+                            <p><%= i.category %></p>
+                        </div>
+                    </div>
+                    <!-- for incomplete tasks -->
+                <% }else{ %> 
+                    <div class="task_item">
+                        <div class="item_info">
+                            <a class="check_mark" href="/complete-task/?id=<%= i._id %>"><i class="far fa-check-square"></i></a>
+                            <div class="item_descp">
+                                <p style="font-size: 1.5rem;"><%= i.description %></p>
+                                <p style="font-size: 1.25rem;">
+                                    <span><i class="far fa-calendar-alt"></i></span>
+                                    <%= month_list[parseInt(i.date.substring(6,7)) - 1] + " " + i.date.substring(8,10) + " , " + i.date.substring(0,4) %> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item_ctg <%= i.category %>">
+                            <p><%= i.category %></p>
+                        </div>
+                    </div>
+                <% } %>
+            <% } %>
+        </div>
+    </body>
+</html>
